@@ -20,7 +20,7 @@ server <- function(input, output) {
       ggsave("plot.jpeg",example_plot, device="jpeg")
       print(list.files())
       addPicture(file = paste0(getwd(), "/plot.jpeg"), sheet = sheet.2, scale = 1,startRow = 4, startColumn = 4)
-      addPicture(file = paste0("c:/Users/bre52623/Documents/R/Shiny Apps/download_plot/elephant.jpeg"), sheet = sheet.2, scale = 1,startRow = 4, startColumn = 4)
+      addPicture(file = paste0(getwd(),"./elephant.jpeg"), sheet = sheet.2, scale = 0.5,startRow = 12, startColumn = 4)
       saveWorkbook(Results_Workbook,file)
     }
 
